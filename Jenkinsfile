@@ -9,7 +9,8 @@ pipeline {
     stage('groovycode_execution') {
             scripts{
                 def name=jenkins
-                println('Hello ${jenkins},welcome to groovy script')
+                println("Hello ${jenkins},welcome to groovy script")
+                
             }
         }
 
