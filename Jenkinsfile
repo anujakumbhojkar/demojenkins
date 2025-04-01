@@ -6,11 +6,14 @@ pipeline {
             steps {
                 echo 'Building...'
             }
-    stage('groovycode_execution') {
-            scripts{
-                def name=jenkins
-                println("Hello ${jenkins},welcome to groovy script")
-                
+        }
+
+        stage('Groovy Code Execution') {
+            steps {
+                script {
+                    def name = "Jenkins"
+                    println("Hello ${name}, welcome to Groovy script")
+                }
             }
         }
 
@@ -27,3 +30,5 @@ pipeline {
         }
     }
 }
+
+    
